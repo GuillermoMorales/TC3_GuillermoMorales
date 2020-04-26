@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3> Errores en los campos</h3>
+	<table>
+		<tr th:each="errors : ${errores}">
+			<td th:text="${errors}"/>	
+		</tr>
+	</table>
+	<form method="post" th:action="@{/ingresar}">
+		<div>
+			<input type="submit" value="Regresar">
+		</div>
+	</form>
+</body>
+</html>

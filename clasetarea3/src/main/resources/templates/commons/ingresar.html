@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Ingreso de nuevo alumno</h1>
+	
+	<form method="post" th:action="@{/proceso}">
+		<div>
+			<label for="nombres">Nombres: </label>
+			<input id="nombres" type="text" placeholder="Ingrese sus Nombres" style="width: 400px" name="nombres"/>
+		</div><br>
+		<div>
+			<label for="apellidos">Apellidos: </label>
+			<input id="apellidos" type="text" placeholder="Ingrese sus Apellidos" style="width: 400px" name="apellidos"/>
+		</div><br>
+		<div>
+			<label for="fecha">Fecha de Nacimiento: </label>
+			<input id="fecha" type="date" value="2020-02-02" name="fecha"/>
+		</div><br>
+		<div>
+			<label for="lugar">Lugar de Nacimiento: </label>
+			<input id="lugar" type="text" placeholder="Ingrese Lugar de Nacimiento" style="width: 400px" name="lugar"/>
+		</div><br>
+		<div>
+			<label for="cole">Instituto o Colegio de procedencia: </label>
+			<input id="cole" type="text" placeholder="Ingrese su Colegio de procedencia" style="width: 400px" name="cole"/>
+		</div><br>		
+		<div>
+			<label for="tels">Teléfono: </label>
+			<input id="tels" type="number" placeholder="Ingrese su número telefónico" style="width: 400px" name="tels"/>
+		</div><br>
+		<div>
+			<label for="cel">Celular: </label>
+			<input id="cel" type="number" placeholder="Ingrese su número de celular" style="width: 400px" name="cels"/>
+		</div><br>
+		<div>
+			<input type="submit" value="Guardar alumno">
+		</div>
+	
+	</form>
+</body>
+</html>

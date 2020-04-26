@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Alumno Ingresado con éxito</h1><br>
+	<h3>Datos registrados:</h3>
+	<p >Nombres:  <b><span th:text="${name}"></span></b></p>
+    <p >Apellidos: <b><span th:text="${lastname}"></span></b></p>
+    <p>Fecha de Nacimiento: <b><span th:text="${start}"></span></b></p>       
+    <p >Lugar de Nacimiento: <b><span th:text="${place}"></span></b></p>
+    <p >Instituto o Colegio de procedencia: <b><span th:text="${hs}"></span></b></p>
+    <p >Teléfono: <b><span th:text="${telephone}"></span></b></p>
+    <p >Celular: <b><span th:text="${cellphone}"></span></b></p><br>
+	<form method="post" th:action="@{/ingresar}">
+		<div>
+			<input type="submit" value="Ingresar Nuevo Alumno">
+		</div>
+	</form>
+</body>
+</html>
